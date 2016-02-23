@@ -95,7 +95,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+* {
+    padding: 0;
+    margin: 0;
+}
 
+body {
+    width: 1000px;
+    margin: 0 auto;
+/*    height: 1800px;
+    background: #141425;
+    background: -webkit-linear-gradient(#141425, #e7e8ea, #e7e8ea);
+    background: -o-linear-gradient(#141425, #e7e8ea, #e7e8ea);
+    background: -moz-linear-gradient(#141425, #e7e8ea, #e7e8ea);
+    background: linear-gradient(#141425, #e7e8ea, #e7e8ea);*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+}
 
 
 
