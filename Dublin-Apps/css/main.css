@@ -103,15 +103,42 @@ textarea {
 body {
     width: 1000px;
     margin: 0 auto;
-/*    height: 1800px;
+    height: 1800px;
     background: #141425;
     background: -webkit-linear-gradient(#141425, #e7e8ea, #e7e8ea);
     background: -o-linear-gradient(#141425, #e7e8ea, #e7e8ea);
     background: -moz-linear-gradient(#141425, #e7e8ea, #e7e8ea);
-    background: linear-gradient(#141425, #e7e8ea, #e7e8ea);*/
+    background: linear-gradient(#141425, #e7e8ea, #e7e8ea);
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+p {
+    color: #FFFFFF;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0 0 0;
+}
+
+.logo-section {
+    display: flex;
+}
+
+.menu {
+    width: 55%;
+    margin: 2% 2% 0 0;
+}
+
+.menu ul{
     display: flex;
     justify-content: space-between;
 }
@@ -119,6 +146,15 @@ header {
 .menu li{
     list-style-type: none;
     display: inline-block;
+    color: #d7d7e3;
+    padding: 3px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.menu .active {
+    background: #d7d7e3;
+    color: #161628;
 }
 
 
