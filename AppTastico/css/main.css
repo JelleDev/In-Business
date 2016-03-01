@@ -115,12 +115,12 @@ h1 {
     color: white;
 }
 
-h3 {
+h2 {
     color: #4b5a65;
     margin-top: 0px;
 }
 
-h4 {
+h3 {
     margin-top: 0px;
     margin-bottom: 0px;
     color: #4b5a65;
@@ -145,10 +145,6 @@ h4 {
     background: white;
 }
 
-.grid-3 .col:last-of-type {
-    margin-right: 0px;
-}
-
 .grid-4 {
     display: flex;
     justify-content: space-between;
@@ -163,21 +159,16 @@ h4 {
 /* SERVICES */
 
 header {
-    overflow: hidden;
     height: 110px;
     line-height: 110px;
-    /*background: yellow;*/
+    display: flex;
+    justify-content: space-between;
 }
 
 header img {
     vertical-align: middle;
     display: inline-block;
 }
-
-.nav {
-    float: right;
-}
-
 
 .nav li {
     display: inline-block;
@@ -204,9 +195,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a454d', end
     box-shadow: -1px -1px 1px black, 0px 1px 1px rgb(106, 131, 141);
 
 }
-
-
-
 
 .banner {
     height: 479px;
@@ -350,27 +338,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#429cd4', end
     margin-top: 30px;
 }
 
-
-
 .projects {
     background: white;
     padding-top: 60px;
 }
 
-.projects p {
-    margin-bottom: 40px;
-}
-
 .project {
     background: white;
-    
 }
 
 .project img {
-    display: block;
+    /*display: block;*/
     padding: 2px;
     border: 1px solid #ededed;
-
+    width: 230px;
+    height: 177px;
 }
 
 .project-slider {
@@ -503,7 +485,40 @@ footer p {
     width: 25px;
 }
 
-@media screen and (max-width: 965px) {
+@media screen and (max-width: 1200px) {
+    .slide-buttons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .projects {
+        padding-top: 10px;
+    }
+
+    .project-holder {
+        width: 495px;
+        margin: 0 auto;
+    }
+
+    .grid-4 {
+        display: block;
+    }
+
+    .grid-4 .project {
+        display: inline-block;
+        width: 49%;
+        text-align: right;
+    }
+
+    .grid-4 .project:nth-child(even) {
+        text-align: left;
+    }
+
+    section.social {
+        padding-top: 60px;
+    }
+
     .social .container {
         flex-direction: column;
         align-items: center;
@@ -513,10 +528,138 @@ footer p {
         margin: 40px 0 0 0;
         width: 495px;
     }
+
+    .img-phone {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 890px) {
-    .img-phone {
+@media screen and (max-width: 630px) {
+    .grid-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-3 .service {
+        width: 60%;
+        padding: 30px 0;
+    }
+
+
+@media screen and (max-width: 550px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        height: 70px;
+    }
+
+    .nav {
+        padding-left: 5%;
+    }
+
+    .banner-caption {
+        width: 474px;
+        text-align: center;
+    }
+
+    .banner-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .recent-work {
+        margin-left: -23px;
+    }
+
+    .btn-primary {
+        width: 110px;
+        height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .project-holder {
+        width: 99%;
+    }
+
+    .project-holder h2 {
+        margin: 0 auto;
+    }
+
+    .blog {
+        width: 99%;
+    }
+
+    .blog h2 {
+        margin: 0 auto;
+    }
+
+    .twitter {
+        width: 99%;
+    }
+
+    .twitter h2 {
+        width: 99%;
+    }
+
+    .sponsor-stroke {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project img {
+        width: 96%;
+        height: 96%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .banner {
+        height: 510px;
+    }
+
+    .banner-caption h1 {
+        font-size: 2.3em;
+    }
+
+    .nav li a {
+        margin-right: 0;
+        font-size: 0.7rem;
+    }
+
+    section.social {
+        padding-bottom: 0px;
+    }
+
+    li.blog-item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images-social {
+        float: none;
+        padding-bottom: 5px;
+    }
+
+    .footer-copyright {
+        width: 100%;
+    }
+
+    .footer-copyright p {
+        padding-bottom: 5px;
+    }
+
+    .twitter, .blog {
         display: none;
     }
 }
