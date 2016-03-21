@@ -170,8 +170,9 @@ header img {
     display: inline-block;
 }
 
-.nav li {
-    display: inline-block;
+.nav {
+    display: flex;
+    list-style-type: none;
 }
 
 .nav li a {
@@ -620,10 +621,6 @@ footer p {
 }
 
 @media screen and (max-width: 390px) {
-    .banner {
-        height: 510px;
-    }
-
     .banner-caption h1 {
         font-size: 2.3em;
     }
@@ -661,6 +658,16 @@ footer p {
 
     .twitter, .blog {
         display: none;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .banner {
+        height: 580px;
+    }
+
+    .banner-caption h1 {
+        font-size: 2em;
     }
 }
 
