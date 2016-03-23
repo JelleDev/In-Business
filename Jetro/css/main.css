@@ -174,12 +174,12 @@ header .container {
 }
 
 nav {
-    width: 40%;
-    margin-top: 4%;
+    margin-top: 30px;
 }
 
-.nav {
-    justify-content: space-between;
+.nav li {
+    display: inline;
+    margin-right: 10px;
 }
 
 .nav li a {
@@ -205,7 +205,7 @@ nav {
 }
 
 .title h2 {
-    padding: 13px 0 0 18px;
+    padding: 13px 0 13px 18px;
     color: white;
 }
 
@@ -276,6 +276,7 @@ nav {
 .features {
     justify-content: space-between;
     margin-top: 4%;
+    flex-wrap: wrap;
 }
 
 .feature {
@@ -321,6 +322,7 @@ nav {
 .recent-posts {
     margin-top: 3%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .recent-info {
@@ -357,6 +359,8 @@ p.m-reset {
 
 .about-me img {
     margin: 16px 23px 0 0;
+    width: 233px;
+    height: 233px;
 }
 
 .about-flex {
@@ -564,7 +568,6 @@ aside {
 
 .blog-nav-items {
     justify-content: space-between;
-    width: 11%;
     margin-bottom: 50px;
 }
 
@@ -583,7 +586,6 @@ aside {
 
 .portfolio-nav-items {
     justify-content: space-between;
-    width: 30%;
     margin-top: 3%
 }
 
@@ -593,6 +595,10 @@ aside {
     font-size: 0.875rem !important;
     padding: 8px 0;
     color: #b9b9b9;
+}
+
+.portfolio-nav-items a {
+    margin-right: 7px;
 }
 
 .portfolio .recent-posts {
@@ -795,6 +801,337 @@ footer h3 {
 
 .relative {
     position: relative;
+}
+
+/*MEDIA QUERYS*/
+
+@media screen and (max-width: 1135px) {
+    img.side-box {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .page-margin .container {
+        margin: 0 10px;
+    }
+
+    .small-box, .large-box {
+        display: none;
+    }
+
+    .logo h1 {
+        padding-left: 10px;
+    }
+
+    .title {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+
+    .slider-img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .slide-left,
+    .slide-right {
+        width: initial !important;
+        height: 52px;
+    }
+
+    .img-info {
+        display: none;
+    }
+
+    section.thumbnails {
+        display: none;
+    }
+
+    .recent-posts {
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 0 !important;
+    }
+
+    .recent-posts:first-child {
+        margin-top: 20px !important;
+    }
+
+    .recent-post {
+        margin: 10px 10px 0 0;
+    }
+
+    .recent-works-title {
+        justify-content: center;
+    }
+
+    .recent-works-title .crop {
+        width: 58%;
+        margin-left: 1%;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 70%;
+    }
+
+    .feature-header h3 {
+        width: 87%; 
+    }
+
+    .feature p {
+        margin-top: 10px;
+    }
+
+    .feature .btn {
+        margin: 10px 0 50px 0;
+    }
+
+    .feature:last-child .btn {
+        margin-bottom: 5px;
+    } 
+
+    aside {
+        display: none;
+    }
+
+    section.about {
+        width: 100%;
+    }
+
+    .red-line {
+        display: none;
+    }
+
+    .blog {
+        width: 100%;
+    }
+
+    .blog img {
+        width: 100%;
+        height: auto;
+    }
+
+    .biography {
+        padding-left: 10px;
+    }
+
+    .information {
+        padding-right: 10px;
+    }
+
+    .link h3,  
+    .link p {
+        padding: 0 10px;
+    }
+
+    .link h6 {
+        padding: 0 10px 18px 10px;
+    }
+
+    .quote-box img {
+        height: 20px;
+        width: initial;
+    }
+
+    .blog .crop {
+        width: 100%;
+    }
+
+    .quote-box {
+        width: 100%;
+    }
+
+    .blog-nav-items {
+        padding-left: 10px;
+    }
+
+    .portfolio-info img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio-info p {
+        margin: 25px 10px 0 10px;
+    }
+
+    .portfolio-info .crop {
+        width: 100%;
+    }
+
+    section.contact img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer .container {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 677px) {
+    .slide-left, .slide-right {
+        display: none;
+    }
+
+    .feature-header {
+        flex-direction: column;
+    }
+
+    .feature-header img {
+        display: none;
+    }
+
+    .title {
+        justify-content: center;
+    }
+
+    section.recent-works {
+        margin-bottom: 10%;
+    }
+
+    .recent-works-title h3 {
+        margin-right: 10px;
+    }
+
+    .recent-works-title {
+        justify-content: center;
+    }
+
+    .recent-works .crop {
+        display: none;
+    }
+
+    .recent-post:nth-child(1) {
+        margin-top: 10px;
+    }
+
+    .flex-img {
+        flex-direction: column;
+    }
+
+    .about-me img {
+        align-self: center;
+        margin-right: 0;
+    }
+
+    .information {
+        padding-right: 0;
+    }
+
+    .blog .crop {
+        margin: 20px 0;
+    }
+
+    footer.flex {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo h1 {
+        margin: 20px 0 15px 0;
+    }
+
+    nav {
+        margin: 0 0 20px 0;
+    }
+
+    li.nav-item {
+        font-size: 0.9rem;
+    }
+
+    .title h2 {
+        padding-left: 0;
+        font-size: 1.25rem;
+    }
+
+    .feature .btn {
+        margin: 10px 0 30px 0;
+    }
+
+    .recent-works {
+        margin: 30px 0 4.5% 0;
+    }
+
+    .recent-post:nth-child(1) {
+        margin-top: 10px;
+    }
+
+    p.flex-2, p.flex-3 {
+        width: 100%;
+    }
+
+    p.flex-3:last-child {
+        margin-bottom: 10%;
+    }
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .alert-box {
+        display: none;
+    }
+
+    section.blog h3 {
+        font-size: 0.90rem;
+    }
+
+    .summary {
+        justify-content: center;
+    }
+
+    .biography {
+        display: none;
+    }
+
+    .quote-box img {
+        padding-left: 18px;
+    }
+
+    .link-info h3, 
+    .link-info p {
+        padding: 0 4% 0 11%;
+    }
+
+    .link-info h6 {
+        padding: 2px 4% 18px 11%
+    }
+
+    .blog-nav-items {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    h3 {
+        font-size: 1rem;
+    }
+
+    li.nav-item {
+        font-size: 0.8rem;
+    }
+
+    .quote-box img {
+        padding: 0 9px;
+    }
+
+    .portfolio-nav-item {
+        font-size: 0.8rem !important;
+    }
 }
 
 /* ==========================================================================
