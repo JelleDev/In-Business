@@ -109,7 +109,7 @@ body {
 }
 
 .container {
-    width: 960px;
+    width: 1160px;
     margin: 0 auto;
 }
 
@@ -129,7 +129,8 @@ h3 {
 }
 
 p {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: lighter;
 }
 
 a {
@@ -153,6 +154,7 @@ section {
 
 header {
     background: url(../img/Header_Background.jpg);
+    background-size: 100% 100%;
 }
 
 .header-top {
@@ -228,7 +230,159 @@ section.services {
     padding: 20px 0;
 }
 
+.service-item p {
+    font-size: 0.75rem;
+}
+
 /*END SECTION SERVICES*/
+
+/*SECTION PORTFOLIO*/
+
+section.portfolio {
+    color: #515f67;
+}
+
+section.portfolio .title h2:first-child {
+    border-color: #515f67;
+}
+
+.top-portfolio {
+    justify-content: space-between;
+}
+
+.top-portfolio ul.nav-items {
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.top-portfolio li.nav-item a{
+    color: #515f67;
+}
+
+.top-portfolio li.nav-item .active {
+    margin: 0 30px 0 0;
+}
+
+.portfolio-items {
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.portfolio-items:first-child {
+    margin: 45px 0 0 0;
+}
+
+/*END SECTION PORTFOLIO*/
+
+/*SECTION DEFAULT*/
+
+section.default {
+    background: #515f67; 
+}
+
+section.default .container {
+    justify-content: space-between;
+}
+
+.information-part {
+    width: 35%;
+}
+
+.default-information p:nth-child(2) {
+    margin: 22px 0;
+}
+
+.default-information button {
+    padding: 10px 35px;
+    color: #353f46;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border: 2px solid #353f46;
+    background: transparent;
+    outline: none;
+}
+
+/*END SECTION DEFAULT*/
+
+/*SECTION TWITTER*/
+
+section.twitter {
+    background: #4bcaff;
+}
+
+section.twitter p {
+    font-size: 1.75rem;
+}
+
+.twitter-top {
+    justify-content: space-between;
+}
+
+section.twitter span {
+    font-weight: normal;
+}
+
+/*END SECTION TWITTER*/
+
+/*SECTION NAME*/
+
+section.name {
+    background: url(../img/who-is_Background.jpg);
+    background-size: 100% 100%;
+    padding: 70px 0 100px 0;
+}
+
+.name-information {
+    justify-content: space-between;
+}
+
+.name-info {
+    width: 47%;
+}
+
+.name-info p {
+    margin: 0 0 30px 0;
+}
+
+.social-media-items {
+    padding: 10px;
+    border: 2px solid #FFFFFF;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/*END SECTION NAME*/
+
+/*SECTION TESTIMONIALS*/
+
+section.testimonials {
+    color: #515f67;
+}
+
+section.testimonials p {
+    font-size: 1.75rem;
+}
+
+section.testimonials p:nth-child(2) {
+    margin: 15px 0 0 0;
+}
+
+.testimonials-top {
+    justify-content: space-between;
+}
+
+section.testimonials .title h2:first-child {
+    border-color: #515f67;
+}
+
+section.testimonials span {
+    font-size: 0.875rem;
+    color: #4bcaff;
+    font-weight: bold;
+    margin: 40px 0 0 0;
+}
+
+/*END SECTION TESTIMONIALS*/
 
 /*CUSTOM HELPER CLASSES*/
 
@@ -239,7 +393,7 @@ section.services {
 .active {
     padding: 2px 10px;
     border: 2px solid #4bcaff;
-    color: #4bcaff;
+    color: #4bcaff !important;
 }
 
 
