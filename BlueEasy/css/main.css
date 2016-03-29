@@ -272,6 +272,30 @@ section.portfolio .title h2:first-child {
     margin: 45px 0 0 0;
 }
 
+.portfolio-item {
+    position: relative;
+}
+
+.overlay {
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #515f67;
+    opacity: 0.9;
+    display: none;
+}
+
+.overlay img {
+    margin-top: 43%;
+    margin-left: 45%;
+}
+
+.portfolio-item:hover .overlay {
+    display: block;
+}
+
 /*END SECTION PORTFOLIO*/
 
 /*SECTION DEFAULT*/
@@ -348,6 +372,7 @@ section.name {
     padding: 10px;
     border: 2px solid #FFFFFF;
     height: 20px;
+    width: 22px;
     margin-right: 10px;
 }
 
@@ -383,6 +408,106 @@ section.testimonials span {
 }
 
 /*END SECTION TESTIMONIALS*/
+
+/*SECTION CONTACT*/
+
+section.contact {
+    background: url(../img/contact_Background.jpg);
+    background-size: 100% 100%;
+}
+
+.form-top {
+    justify-content: space-between;
+}
+
+.form-top fieldset {
+    width: 44%;
+}
+
+.form-top .contact-info {
+    width: 46%;
+    margin: 20px 0 0 0;
+}
+
+.contact-info p:nth-child(2) {
+    margin: 35px 0 0 0;
+}
+
+label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin: 35px 0 5px 0;
+}
+
+.form-top label:first-child {
+    margin: 0 0 5px 0;
+}
+
+.form-top input, textarea {
+    width: 100%;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+}
+
+.form-top input:focus, 
+textarea:focus {
+    border-color: #4bcaff;
+}
+
+.form-top input {
+    height: 32px;
+}
+
+textarea {
+    height: 180px;
+    resize: none;
+}
+
+input[type="submit"] {
+    margin: 30px 0 0 0;
+    padding: 15px 120px;
+    background: #4bcaff;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+/*END SECTION CONTACT*/
+
+/*FOOTER*/
+
+footer {
+    background: #353f47;
+    color: #515f67;
+    font-size: 0.75rem;
+}
+
+footer .container {
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.footer-nav-item {
+    display: inline;
+    border-right: 1px solid #515f67;
+    padding: 0 12px;
+}
+
+.footer-nav-item:first-child {
+    padding: 0 12px 0 0;
+}
+
+.footer-nav-item:last-child {
+    border: none;
+}
+
+.footer-nav-item a {
+    color: #515f67;
+}
+
+/*END FOOTER*/
 
 /*CUSTOM HELPER CLASSES*/
 
