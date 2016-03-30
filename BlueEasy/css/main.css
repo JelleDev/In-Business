@@ -469,7 +469,8 @@ textarea:focus {
 textarea {
     height: 180px;
     resize: none;
-    width: 97%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
@@ -605,6 +606,242 @@ footer .container {
 
     .name-info {
         width: 100%;
+    }
+
+    label {
+        margin-top: 15px;
+    }
+
+    .contact-info p:nth-child(2) {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .header-top .container,
+    section.portfolio .top-portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo h1 {
+        padding: 30px 0 10px 0;
+    }
+
+    ul.nav-items {
+        padding: 10px 0 30px 0;
+    }
+
+    ul.nav-items li.nav-item:last-child a{
+        margin-right: 0;
+    }
+
+    .slogan h2 {
+        font-size: 1rem;
+    }
+
+    section.services .title,
+    section.default .title,
+    section.name .title,
+    section.contact .title {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .default-information {
+        text-align: center;
+    }
+
+    .twitter-bottom,
+    .name-information {
+        text-align: center;
+    }
+
+    .twitter-top,
+    .testimonials-top {
+        position: relative;
+        justify-content: center;
+    }
+
+    .twitter-top img,
+    .testimonials-top img {
+        position: absolute;
+        right: 0;
+    }
+
+    img.portfolio-item {
+        margin: 20px 0 0 0;
+    }
+
+    .twitter-top img {
+        top: 12px;
+    }
+
+    .testimonials-bottom {
+        text-align: center;
+    }
+
+    .form-top {
+        flex-direction: column;
+    }
+
+    .form-top .contact-info {
+        order: -1;
+        width: 100%;
+    }
+
+    .contact-info p:first-child {
+        text-align: center;
+    }
+
+    .contact-info p:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .contact-info p:last-child {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    section,
+    section.services,
+    section.name,
+    section.default,
+    section.contact {
+        padding: 20px 0;
+    }
+
+    header,
+    section.name,
+    section.contact {
+        background: #515f67;
+    }
+
+    section.services .title,
+    section.default .title,
+    section.name .title,
+    section.contact .title {
+        padding-bottom: 30px;
+    }
+
+    .form-top .contact-info {
+        margin-top :10px;
+    }
+
+    .header-map {
+        display: none;
+    }
+
+    .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        padding-bottom: 10px;
+    }
+
+    li.nav-item a {
+        margin: 0 10px 0 0;
+        font-size: 0.8rem;
+    }
+
+    li.nav-item .active,
+    .top-portfolio li.nav-item .active {
+        margin: 0 10px 0 0;
+    }
+
+    .service-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+    }
+
+    .twitter-top img {
+        top: 6px;
+    }
+    
+    section.twitter p,
+    section.testimonials p {
+        font-size: 1.25rem;
+    }
+
+    .vimeo {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-top fieldset {
+        width: 97%;
+    }
+
+    input[type="submit"] {
+        margin: 15px 0 0 0;
+        width: 100%;
+    }
+
+    footer .container {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    li.nav-item a {
+        font-size: 0.56rem;
+    }
+
+    .title h2 {
+        font-size: 1.3rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.2rem;
+    }
+
+    section.twitter p,
+    section.testimonials p {
+        font-size: 1rem;
+    }
+
+    .testimonials-top img {
+        width: 16px;
+        height: 13px;
+    }
+
+    .name-info p {
+        margin: 0 0 15px 0;
+    }
+
+    section.contact .title {
+        padding-bottom: 10px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    li.footer-nav-item {
+        font-size: 0.68rem;
+    }
+
+    li.footer-nav-item:last-child {
+        padding: 0 0 0 12px;
+    }
+
+    footer p {
+        margin: 15px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    textarea,
+    input[type="submit"] {
+        width: 94%;
     }
 }
 
