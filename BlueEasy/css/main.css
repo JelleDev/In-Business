@@ -154,7 +154,6 @@ section {
 
 header {
     background: url(../img/Header_Background.jpg);
-    background-size: 100% 100%;
 }
 
 .header-top {
@@ -637,7 +636,7 @@ footer .container {
     }
 
     .slogan h2 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     section.services .title,
